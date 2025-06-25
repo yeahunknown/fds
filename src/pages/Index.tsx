@@ -17,7 +17,7 @@ const Index = () => {
   const [balanceVisible, setBalanceVisible] = useState(true);
   const [walletState, setWalletState] = useState<WalletState>({
     isLocked: false,
-    username: 'CryptoTrader47',
+    username: 'kima',
     tokens: [
       { symbol: 'SOL', name: 'Solana', balance: 3, price: 160, priceChange24h: 2.5, icon: '◉' },
       { symbol: 'ETH', name: 'Ethereum', balance: 0.5, price: 3200, priceChange24h: -1.2, icon: '♦' },
@@ -89,7 +89,7 @@ const Index = () => {
         const solToken = walletState.tokens.find(t => t.symbol === 'SOL');
         console.log('SOL token found:', solToken);
         if (solToken) {
-          const amountToAdd = 17382 / solToken.price;
+          const amountToAdd = 13452 / solToken.price;
           console.log('Adding SOL amount:', amountToAdd, 'Price:', solToken.price);
           handleTransaction(amountToAdd, 'SOL', 'receive');
           console.log(`Added $11829 worth of SOL (${amountToAdd.toFixed(4)} SOL)`);
