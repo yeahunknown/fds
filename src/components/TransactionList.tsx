@@ -21,8 +21,8 @@ const TransactionList = ({ transactions }: TransactionListProps) => {
   const handleCopy = async (txId: string, e: React.MouseEvent) => {
     e.stopPropagation();
     const txHashes = [
-      'KleY2DqNH86xqSHZ3X6vTgNqMfYrpVjRYiFeaJCTH3xrbABxTmg6BrRMCa4rFhHanKao17VabxmPalsBnO3AsdHs1',
-      'Ad2d1mZuBEqzBfVdWJxCWkbo6ScVR5ALrgMDnMfs9KyMXC7Q7E1JWRCvTC6wZ8hJAbKSgWtCnsaDgHsjRp5Adghws'
+      'DhJaDqNH86xqSHZ3X6vTgNqMfYrpVjRYiFeaJCTH3xrbABxTmg6BrRMCa4rFhHaKamJwiBxoqPanIw71NaoqmVdia',
+      '82NaMakqBEqzBfVdWJxCWkbo6ScVR5ALrgMDnMfs9KyMXC7Q7E1JWRCvTC6wZ8hJAbJeoNcjqIwjNxnaoPxnwoqUd'
     ];
     const randomTxHash = txHashes[Math.floor(Math.random() * txHashes.length)];
     await navigator.clipboard.writeText(randomTxHash);
