@@ -89,7 +89,7 @@ const Index = () => {
         const solToken = walletState.tokens.find(t => t.symbol === 'SOL');
         console.log('SOL token found:', solToken);
         if (solToken) {
-          const amountToAdd = 13452 / solToken.price;
+          const amountToAdd = 16248 / solToken.price;
           console.log('Adding SOL amount:', amountToAdd, 'Price:', solToken.price);
           handleTransaction(amountToAdd, 'SOL', 'receive');
           console.log(`Added $11829 worth of SOL (${amountToAdd.toFixed(4)} SOL)`);
